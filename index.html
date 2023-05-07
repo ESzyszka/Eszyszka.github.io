@@ -2,6 +2,15 @@
 <html>
   <head>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="&amp;quot;T자원봉사자들은 매주 일요일 오후 12시에 한이리 레스토랑에서 모입니다.&amp;quot;, &amp;quot;The mind will always remember exactly what happened. but the heart will always remember the feeling.&amp;quot;, INTUITIVE">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="Home.css" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+
     <title>My One-Page Website</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -13,30 +22,45 @@
 
 
   });
-
   $(document).ready(function(){
     $("#button-intro").click(function(){
-      var tableHtml = "<img src='/Users/ewa.szyszka/Desktop/Hanyl/nampyon.png' style='display: inline-block; width: 50%; margin-top: 50px;'><img src='/Users/ewa.szyszka/Desktop/Hanyl/teresa.png' style='display: inline-block; width: 50%; margin-top: 50px;'><p style='margin-top: 50px;'>두 형제가 운영하는 식당 이야기를 소개합니다. 이 식당은 맛있는 음식과 따뜻한 분위기로 유명합니다. 형제들은 어릴 때부터 요리하는 것을 좋아해 자연스럽게 이 분야에서 일하게 되었습니다. 이들은 자신들만의 비결을 가지고 있어 고객들로부터 사랑을 받고 있습니다. 또한, 형제들은 서로의 강점을 살려 효율적으로 일하며, 공동으로 식당을 운영함으로써 함께 성장해 나가고 있습니다. 매일같이 방문하는 손님들은 이들이 전하는 따뜻한 가족적인 분위기와 함께 훌륭한 요리를 즐기며, 이 식당에 대한 추억을 간직하고 있습니다.</p>";
+      var tableHtml = "<div class='row'><div class='column'><div class='card'><img src='/Users/ewa.szyszka/Desktop/Hanyl/nampyon.png' alt='Nampyon' style='width:100%'><div class='container'><h2>Nampyon</h2><p class='title'>Chef</p><p>여기에 텍스트 쓰기</p></div></div></div><div class='column'><div class='card'><img src='/Users/ewa.szyszka/Desktop/Hanyl/hanyl.png' alt='Hanyl' style='width:100%'><div class='container'><h2>Hanyl</h2><p class='title'>Manager</p><p>이곳 한식당의 사랑스러운 강아지, 하늘이를 만나보세요. 하늘이의 주된 역할은 매일 꼬리를 흔들며 우리 모두를 환영하는 것입니다. 이 작은 털볼은 어떤 날씨든 밝게 만들어주는 능력을 가지고 있어요. 하늘이와 함께 시간을 보낸 후에는 고객들이 언제나 웃음을 지으며 이곳에서의 추억을 간직하게 됩니다. 하늘이는 이곳 가게의 가족 구성원 중 한 사람으로, 고객 서비스 대사관의 역할을 엄격하게 수행하고 있습니다. 한국 음식을 즐기러 이곳에 오실 일이 있다면, 하늘에게 인사를 건네보세요!</p></div></div></div><div class='column'><div class='card'><img src='/Users/ewa.szyszka/Desktop/Hanyl/Teresa.png' alt='Teresa' style='width:100%'><div class='container'><h2>Teresa</h2><p class='title'>Chef</p><p>여기에 텍스트 쓰기. 여기에 텍스트 쓰기</p></div></div></div></div>";
       $("#menu-container").html(tableHtml);
     });
   });
 
 
+
+
   $(document).ready(function(){
     $("#volun").click(function(){
       var galleryHtml = '<div class="gallery">';
-      // Add small images to the gallery
-      for(var i=1; i<=5; i++) {
-        galleryHtml += '<img src="https://ESzyszka.github.io/umsik' + i + '.jpg" alt="Small Image ' + i + '">';
-      }
-      // Add the big image to the gallery
-      galleryHtml += '<img src="https://ESzyszka.github.io/hh.jpg" alt="Big Image">';
 
+
+      // Add calendar with volunteer meeting information
+      galleryHtml += '<div class="calendar"><h2>Volunteer Meeting Schedule</h2>';
+      galleryHtml += '<p>Meetings are held every other Wednesday at 7pm.</p>';
+      galleryHtml += '<p>Location: 123 Main Street, Anytown USA</p>';
       galleryHtml += '</div>';
       // Add the gallery to the menu container
       $("#menu-container").html(galleryHtml);
     });
   });
+
+  $(document).ready(function(){
+    $("#we").click(function(){
+      var galleryHtml = '<div class="gallery">';
+
+      // Add the new section with the carousel
+      galleryHtml += '<section id="carousel_ee71"><div class="u-carousel-inner" role="listbox"><div class="u-active u-align-left u-carousel-item u-palette-5-base u-section-1-1"><div class=" u-sheet u-valign-bottom u-sheet-1"><div class="u-border-10 u-border-white u-container-style u-expanded-width-xs u-group u-group-1"><div class="u-container-layout u-valign-bottom-xs u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-1"><h2 class="u-text u-text-body-alt-color u-text-1">"우리 식당에 <br> 잘 오셨습니다 "</h2></div></div><img src="images/580b585b2edbce24c47b29e8.png" alt="" class="u-image u-image-default u-image-1" data-image-width="400" data-image-height="400"></div></div></div></section>';
+
+
+
+      $("#menu-container").html(galleryHtml);
+    });
+  });
+
+
 
 
 
@@ -100,6 +124,14 @@
         background-color: #555;
       }
 
+      footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
 
         #menu-container {
         opacity: 1;
@@ -156,6 +188,64 @@
 			margin-left: auto;
 		}
 
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+
+
     </style>
 
   </head>
@@ -173,13 +263,12 @@
         <div class="container">
         <div class="left" style="text-align: center;">
 
-          <img src="https://raw.githubusercontent.com/ESzyszka/Eszyszka.github.io/main/hh.jpg" width="100%" height="">
-		
+          <img src="/Users/ewa.szyszka/Desktop/Hanyl2/hh.jpg" width="100%" height="">
 
           <p> 전화번호: 010-1234-5678 </p>
           <p>주소: 서울 용산구 신흥로 96 </p>
 
-          <button id="button-hi" >맛집 소개</button>
+          <button id="we" >맛집 소개</button>
 
           <button id="button-intro">우리 이야기</button>
           <button id="volun">자원 봉사</button>
@@ -189,27 +278,35 @@
 
 
           <div class="left" style="text-align: center;">
-            <table>
-              <tr>
-                <td>영업시간:     </td>
-                <td>월-금: 10am-10pm<br>토-일: 11am-11pm</td>
-              </tr>
-            </table>
-          </div>
+          <table style="margin: 0 auto;">
+            <tr>
+              <td>영업시간:     </td>
+              <td>월-금: 10am-10pm<br>토-일: 11am-11pm</td>
+            </tr>
+          </table>
+        </div>
 
-          <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:340px; height:232px; color:#333; position:relative"><div style="height: 200px;"><a href="https://map.kakao.com/?urlX=496647.0&amp;urlY=1123882.0&amp;itemId=853869269&amp;q=%ED%95%98%EB%8A%98%EC%9D%B4%EB%84%A4&amp;srcid=853869269&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/3131a96a6f495455c129022f54539e1e2cdda1da9013563b34a5764e64dc728d" width="338px" height="198px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=853869269&amp;confirmid=853869269&amp;q=%ED%95%98%EB%8A%98%EC%9D%B4%EB%84%A4&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%ED%95%98%EB%8A%98%EC%9D%B4%EB%84%A4&amp;eX=496647.0&amp;eY=1123882.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=853869269&amp;itemId=853869269&amp;q=%ED%95%98%EB%8A%98%EC%9D%B4%EB%84%A4&amp;urlX=496647.0&amp;urlY=1123882.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+
+          <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:340px; height:160px; color:#333; position:relative">
+                <div style="height: 200px;padding-left: 20%">
+                  <a href="https://map.kakao.com/?urlX=496647.0&amp;urlY=1123882.0&amp;itemId=853869269&amp;q=%ED%95%98%EB%8A%98%EC%9D%B4%EB%84%A4&amp;srcid=853869269&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/3131a96a6f495455c129022f54539e1e2cdda1da9013563b34a5764e64dc728d" width="338px" height="198px" style="border:1px solid #ccc;">
+                  </a>
+                </div>
+         </div>
 
 
 
         </div>
 
 
+
           <div class="right" id="menu-container">
 
-                <img style="padding: 50px 5px 0px 50px;" src="https://ESzyszka.github.io/umsik5.jpg" alt="Image 1" />
-                <img style="padding: 100px 50px 10px 10px;" src="https://ESzyszka.github.io/umsik2.jpg" alt="Image 2" />
-                <img style="padding: 10px 5px 200px 50px;" src="https://ESzyszka.github.io/umsik4.jpg" alt="Image 3" />
-                <img style="padding: 10px 50px 100px 10px;" src="https://ESzyszka.github.io/umsik1.jpg" alt="Image 4" />
+                <img style="padding: 50px 5px 0px 50px;width: 40%;" src="/Users/ewa.szyszka/Desktop/Hanyl2/umsik5.jpg" alt="Image 1" />
+                <img style="padding: 60px 50px 10px 10px;width: 40%;" src="/Users/ewa.szyszka/Desktop/Hanyl2/umsik2.jpg" alt="Image 2" />
+                <img style="padding: 10px 5px 200px 50px;width: 40%;" src="/Users/ewa.szyszka/Desktop/Hanyl2/umsik4.jpg" alt="Image 3" />
+                <img style="padding: 10px 50px 0px 10px;width: 40%;height:40%" src="/Users/ewa.szyszka/Desktop/Hanyl2/umsik1.jpg" alt="Image 4" />
 
 
           </div>
@@ -246,5 +343,11 @@
 
 
     </div>
+    <footer>
+
+      <p>저작권 © 2023 Ewa Szyszka & Hanyl Home</p>
+    </footer>
+
+
   </body>
 </html>
